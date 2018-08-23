@@ -1,0 +1,83 @@
+<div>
+
+
+    <div class="container">
+      <div class="sub-container">
+        <div id="result-text">
+            <div id="res">{{display}}</div>
+            <div id="result">
+                {{result}}
+            </div>
+        </div>
+      </div>
+        <table class="table">
+
+            <tbody>
+
+                <tr>
+                    <td scope="row">
+                        <button (click) = "addToCalculate('7')">7</button>
+                    </td>
+                    <td>
+                        <button (click) = "addToCalculate('8')">8</button>
+                    </td>
+                    <td>
+                        <button (click) = "addToCalculate('9')">9</button>
+                    </td>
+                    <td>
+                        <button title="Multiplication Operator" (click) = "Calculate('*')">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <button (click) = "addToCalculate('4')">4</button>
+                    </td>
+                    <td>
+                        <button (click) = "addToCalculate('5')">5</button>
+                    </td>
+                    <td>
+                        <button (click) = "addToCalculate('6')">6</button>
+                    </td>
+                    <td>
+                        <button title="Addition Operator" (click) = "Calculate('+')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">
+                        <button (click) = "addToCalculate('3')">3</button>
+                    </td>
+                    <td>
+                        <button (click) = "addToCalculate('2')">2</button>
+                    </td>
+                    <td>
+                        <button (click) = "addToCalculate('1')">1</button>
+                    </td>
+                    <td>
+                        <button title="Subtraction Operator" (click) = "Calculate('-')">-</button>
+                    </td>
+                </tr>
+
+                <tr>
+                        <td scope="row">
+                            <button title="Division Operator" (click) = "Calculate('/')">/</button>
+                        </td>
+                        <td>
+                            <button (click) = "addToCalculate('0')">0</button>
+                        </td>
+                        <td>
+                            <button (click) = "addToCalculate('.')">.</button>
+                        </td>
+                        <td>
+                            <button (click) = "Evaluate()">=</button>
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button  (click) = "ClearScreen()">Clear</button></td>
+                </tr>
+
+            </tbody>
+            </table>
+
+  </div>
+
+</div>

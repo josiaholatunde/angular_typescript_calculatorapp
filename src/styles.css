@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background: url('./assets/img/img3.jpg');
+  background-size: cover;
+  margin: 0;
+}
+
+
+.topnav {
+  background-color: blueviolet;
+  font-family: cursive;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 30px;
+}
+.topnav a:not(:first-child){
+  float: right;
+}
+
+.topnav a:first-child{
+    font-size: 1.5em;
+    text-shadow: 1px 1px 4px lightgrey;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+/* .active {
+  background-color: white;
+  color: black;
+} */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
